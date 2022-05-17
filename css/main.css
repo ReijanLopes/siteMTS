@@ -96,7 +96,9 @@ html {
   font-size: 10px;
 
   --background: #f3f3f3;
-  --background-colorful: #285572;
+  --background-green: #247377;
+  --background-middle-green: #1f6266;
+  --background-dark-green: #184a4d;
   --button-areaWhite: #285572;
 }
 
@@ -541,6 +543,8 @@ td:last-child {
 /* ------------------------------------------------------------------- 
  * ## spacing
  * ------------------------------------------------------------------- */
+ 
+
 button,
 .btn {
   margin-bottom: 1.6rem;
@@ -1003,9 +1007,9 @@ button.btn--primary,
 input[type="submit"].btn--primary,
 input[type="reset"].btn--primary,
 input[type="button"].btn--primary {
-  background: #285572;
-  border-color: #285572;
-  color: #000000;
+  background-color: var(--background-green); 
+  border-color: var(--background-green);
+  color: #ffffff;
   border-radius: 8px;
 }
 
@@ -1019,9 +1023,9 @@ button.btn--primary:focus,
 input[type="submit"].btn--primary:focus,
 input[type="reset"].btn--primary:focus,
 input[type="button"].btn--primary:focus {
-  background: #123f5c;
-  border-color: #123f5c;
-  box-shadow: 2px 3px 20px 1px #0000008a;
+  background: var(--background-middle-green);
+  border-color: var(--background-middle-green);
+  box-shadow: 0 0 12px 1px #00000066;
 }
 
 .color-white{
@@ -1035,7 +1039,6 @@ button.h-full-width {
   width: 100%;
   margin-right: 0;
   border-radius: 8px;
-  color: #ffffff;
 }
 
 .btn--small,
@@ -1832,16 +1835,15 @@ input::-moz-focus-inner {
 
 
 .header-logo a {
-  display: block;
+  display: flex;
+  align-items: center;
   padding: 0;
   outline: 0;
   border: none;
 }
 
 .header-logo img {
-  width: 65px;
-  margin-top: 5px;
-
+  width: 50px;
 }
 
 /* -------------------------------------------------------------------
@@ -1869,7 +1871,7 @@ input::-moz-focus-inner {
 
 .header-nav a:hover,
 .header-nav a:focus {
-  color: #fb8b23;
+  color: #35abb1;
 }
 
 .header-nav li {
@@ -2058,7 +2060,7 @@ input::-moz-focus-inner {
   position: relative;
 }
 
-.s-hero::before {
+/* .s-hero::before {
   display: block;
   content: "";
   position: absolute;
@@ -2068,7 +2070,7 @@ input::-moz-focus-inner {
   height: 100%;
   background-color: #050505;
   opacity: .5;
-}
+} */
 
 .no-js .s-hero {
   background: #000000;
@@ -2550,8 +2552,8 @@ html.no-csstransitions .hero-content {
   display: block;
   width: 100%;
   margin-right: 0;
-  background-color: var(--button-areaWhite);
-  border-color: var(--button-areaWhite);
+  background-color: var(--background-green);
+  border-color: var(--background-green);
   border-radius: 8px;
   color: #ffffff;
 }
@@ -2648,7 +2650,7 @@ html.no-csstransitions .hero-content {
 .s-connect {
   padding-top: 16rem;
   padding-bottom: 0;
-  background-color: var(--background-colorful);
+  background-color: var(--background-green);
 }
 
 .connect-content {
@@ -2680,14 +2682,18 @@ html.no-csstransitions .hero-content {
 .connect-content .btn {
   margin-top: auto;
   margin-right: 0;
-  background: #ffffff;
-  border-color: #ffffff;
   color: #000000;
+}
+
+.back-white{
+  background-color: white !important;
+  border-color: white !important;
 }
 
 .connect-content .btn:hover{
   background: #ffffff;
   border-color: #ffffff;
+  box-shadow: 0 0 12px 1px #00000066;
 }
 
 /* ------------------------------------------------------------------- 
@@ -3012,11 +3018,9 @@ html.no-csstransitions .hero-content {
  * # social  
  *
  * ------------------------------------------------------------------- */
-/* .s-social {
-  padding-top: 10.4rem;
-  padding-bottom: 9.6rem;
-  background-color: #000000;
-} */
+.s-social {
+  background-color: var(--background-dark-green);
+}
 
 .social-content {
   max-width: 1000px;
@@ -3166,7 +3170,7 @@ html.no-csstransitions .hero-content {
 .s-footer {
   padding-top: 10rem;
   padding-bottom: 5rem;
-  background-color: var(--button-areaWhite);
+  background-color: var(--background-green);
   font-family: "Open Sans", sans-serif;
   font-size: 1.9rem;
   line-height: 1.882;
@@ -3195,8 +3199,10 @@ html.no-csstransitions .hero-content {
 
 .s-footer .btn--footer:hover,
 .s-footer .btn--footer:focus {
-  border-color: #000000;
-  background-color: #000000;
+  border-color: #ffffff;
+  background-color: #ffffff;
+  color:#000000;
+  box-shadow: 0 0 12px 1px #00000066;
 }
 
 .s-footer .row .column:first-child {
