@@ -587,6 +587,7 @@ form,
   height: 100vh;
   width: 100%;
   overflow: hidden;
+
 }
 
 .no-js #preloader,
@@ -1039,6 +1040,14 @@ button.h-full-width {
   width: 100%;
   margin-right: 0;
   border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button.h-full-width img{
+  width: 40px;
+  margin-right: 8px;
 }
 
 .btn--small,
@@ -2060,7 +2069,7 @@ input::-moz-focus-inner {
   position: relative;
 }
 
-/* .s-hero::before {
+.s-hero::before {
   display: block;
   content: "";
   position: absolute;
@@ -2070,7 +2079,7 @@ input::-moz-focus-inner {
   height: 100%;
   background-color: #050505;
   opacity: .5;
-} */
+}
 
 .no-js .s-hero {
   background: #000000;
@@ -3411,7 +3420,7 @@ html.no-csstransitions .hero-content {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #000000;
+  background-color: #0000008a;
   opacity: .7;
 }
 
@@ -3443,7 +3452,7 @@ html.no-csstransitions .hero-content {
 }
 
 .page-header--events {
-  background-image: url(../images/header-bgs/próximos-eventos.jpg);
+  background-image: url(../images/fundo\ site\ provisorio.png);
 }
 
 .page-header--connect {

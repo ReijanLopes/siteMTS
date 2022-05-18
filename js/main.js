@@ -33,7 +33,7 @@
             // will first fade out the loading animation 
             $("#loader").fadeOut("slow", function() {
                 // will fade out the whole DIV that covers the website.
-                $("#preloader").delay(300).fadeOut("slow");
+                $("#preloader").delay(0).fadeOut("slow");
             }); 
             
             // for hero content animations 
@@ -118,7 +118,7 @@
     * ------------------------------------------------------ */
     const ssBackToTop = function() {
         
-        const pxShow      = 500;
+        const pxShow      = 300;
         const $goTopButton = $(".ss-go-top")
 
         // Show or hide the button
