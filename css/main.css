@@ -98,8 +98,11 @@ html {
   --background: #f3f3f3;
   --background-green: #247377;
   --background-middle-green: #1f6266;
+  --background-banner: #21696d;
   --background-dark-green: #184a4d;
+  --background-dark-blue: #162A65;
   --button-areaWhite: #285572;
+
 }
 
 @media screen and (max-width:400px) {
@@ -279,7 +282,7 @@ small {
 blockquote {
   margin: 4rem 0;
   padding: 4rem 4rem;
-  border-left: 4px solid black;
+  border-left: 4px solid var(--background-green);
   position: relative;
 }
 
@@ -1046,8 +1049,8 @@ button.h-full-width {
 }
 
 button.h-full-width img{
-  width: 40px;
-  margin-right: 8px;
+  width: 30px;
+  margin-right: 20px;
 }
 
 .btn--small,
@@ -2077,7 +2080,7 @@ input::-moz-focus-inner {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #050505;
+  background: linear-gradient(var(--background-dark-blue), var(--background-green));
   opacity: .5;
 }
 
@@ -3444,11 +3447,11 @@ html.no-csstransitions .hero-content {
 }
 
 .page-header--about {
-  background-image: url(../images/header-bgs/about-header-bg-2000.jpg);
+  background-image: url(../images/fundo\ site\ provisorio.png);
 }
 
 .page-header--contact {
-  background-image: url(../images/header-bgs/contact-header-bg-2000.jpg);
+  background-image: url(../images/fundo\ site\ provisorio.png);
 }
 
 .page-header--events {
